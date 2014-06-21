@@ -9,9 +9,9 @@ class bankDisplay:
         
         self.main.wm_title("Transaction Entry Menu")
 
-        self.columnLabel1 = Label(self.main, text="Please Select One").grid(row=00,column=0)
-        self.columnLabel2 = Label(self.main, text="Please Select One").grid(row=00,column=1)
-        self.columnLabel3 = Label(self.main, text="Please Enter Value").grid(row=00,column=2)
+        self.columnLabel1 = Label(self.main, text="Please Select One").grid(row=0,column=0)
+        self.columnLabel2 = Label(self.main, text="Please Select One").grid(row=0,column=1)
+        self.columnLabel3 = Label(self.main, text="Please Enter Value").grid(row=0,column=2)
         
         #########################################
         ##  the transaction type boxes
@@ -76,13 +76,36 @@ class bankDisplay:
 
 
     def submitbutton(self):
+        ## will eventually replace print with a calling to the class object that connects to the database
         #print self.main.amountEntry.get()
         print(self.amountEntry.get())
         print(self.avalue.get())
         print(self.checkRorM.get())
+
+        if(self.avalue.get() == 'Pay Bill'):  ## request some more info
+            self.moreInfo = Tk()
+            self.moreInfoLabel1 = Label(self.moreInfo, text="Please Expand").grid(row=0,column=0)
+            
+            self.newBillFrame = Frame(self.moreInfo)
+            self.newBillLabel = Label(self.newBillFrame,text="What Bill?")
+            self.newBillEntry = Entry(self.newBillFrame, bd=5)
+            
+            self.newBillFrame.grid(row=0, column=0)
+            self.newBillLabel.grid(row=0, column=1)
+            self.newBillEntry.grid(row=0, column=2)
+
+            self.morebutton = Button(self.moreInfo, text="Enter Bill", command=self.submitbill, bg='green', fg='white').grid(row=1, column=1)
+            
+
         #str astring = self.avalue.get()
         #print self.avalue[:]
         #print astring
+
+    def submitbill(self):
+        ## will eventually replace print with a calling to the class object that connects to the database
+        print(self.newBillEntry.get())
+        self.moreInfo.destroy()
+
 
     def run(self):
         self.main.mainloop()
