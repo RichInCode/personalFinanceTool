@@ -1,0 +1,152 @@
+html,button,input,select,textarea {
+color:#222;
+}
+
+html {
+font-size:1em;
+line-height:1.4;
+}
+
+hr {
+display:block;
+height:1px;
+border:0;
+border-top:1px solid #ccc;
+margin:1em 0;
+padding:0;
+}
+
+H2 {
+font-family:"PT Sans", sans-serif;
+font-size:25px;
+font-weight:300;
+letter-spacing:-2px;
+text-rendering:optimizeLegibility;
+margin:.3em 0 .1em;
+}
+
+ul {
+list-style-type:none;
+color:#3D3B3C;
+margin:0;
+padding:0;
+}
+
+li {
+font:15px sans-serif;
+fill:#555;
+text-rendering:optimizeLegibility;
+border-bottom:1px solid #eee;
+overflow:auto;
+padding:5px;
+}
+
+.widget0 {
+width:1200px;
+height:350px;
+background-color:#D0D0DB;
+font-family:"PT Sans", sans-serif;
+font-size:35px;
+font-weight:250;
+text-rendering:optimizeLegibility;
+float:left;
+margin:.2em;
+padding:.2em;
+}
+
+.widget1 {
+width:300px;
+height:350px;
+background-color:#D0D0DB;
+font-family:"PT Sans", sans-serif;
+font-size:35px;
+font-weight:250;
+text-rendering:optimizeLegibility;
+float:left;
+margin:.2em;
+padding:.2em;
+}
+
+.widget2 {
+width:400px;
+height:350px;
+background-color:#D0D0DB;
+font-family:"PT Sans", sans-serif;
+font-size:35px;
+font-weight:250;
+text-rendering:optimizeLegibility;
+float:left;
+margin:.2em;
+padding:.2em;
+}
+
+
+thead {
+display:table-header-group;
+}
+
+tr,img {
+page-break-inside:avoid;
+}
+
+img {
+max-width:100%!important;
+}
+
+@page {
+margin:.5cm;
+}
+
+p,h2,h3 {
+orphans:3;
+widows:3;
+}
+
+h2,h3 {
+page-break-after:avoid;
+}
+}
+
+.arc text {
+font:10px sans-serif;
+text-anchor: middle;
+}
+
+.arc path {
+stroke:#fff;
+}
+
+/* roll over tool tip styles */
+.d3-tip {
+line-height:1;
+font-weight:400;
+font-size:12px;
+background:rgba(0,0,0,0.8);
+color:#fff;
+border-radius:2px;
+padding:10px;
+}
+
+/* animated mini spark line styles */
+.path {
+stroke: steelblue;
+stroke-width: 1.5;
+fill: none;
+}
+
+/* doghnut diagram styles */
+.breaker {
+font-size:26px;
+fill:#222;
+text-anchor:middle;
+}
+
+.axis path {
+    fill: none;
+    stroke: #777;
+    shape-rendering: crispEdges;
+}
+.axis text {
+    font-family: Lato;
+    font-size: 13px;
+}
