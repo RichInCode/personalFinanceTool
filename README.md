@@ -21,12 +21,14 @@ A tool to manage personal finances in a two person house hold.  Includes a pytho
  Some screen shots are below.  First is a view of the dashboard:
 
  ![Dashboard](/screenshots/sampleScreenShot.png)
- Format: ![Alt Text](url)
 
  Below shows what happens when the mouse hovers over a point in a graph:
 
+ ![Dashboard](/screenshots/sampleScreenShot_hover.png)
+
  And if one hovers over the segments in the pie chart:
 
+ ![Dashboard](/screenshots/sampleScreenShot_hoverPoint.png)
 
   
   
