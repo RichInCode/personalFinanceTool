@@ -24,11 +24,11 @@ A tool to manage personal finances in a two person house hold.  Includes a pytho
 
  Below shows what happens when the mouse hovers over a point in a graph:
 
- ![Dashboard](/screenshots/sampleScreenShot_hover.png)
+ ![Dashboard](/screenshots/sampleScreenShot_hoverPoint.png)
 
  And if one hovers over the segments in the pie chart:
 
- ![Dashboard](/screenshots/sampleScreenShot_hoverPoint.png)
+ ![Dashboard](/screenshots/sampleScreenShot_hover.png)
 
   
   
